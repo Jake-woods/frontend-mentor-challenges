@@ -1,0 +1,23 @@
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.paragraph,
+.btn,
+.heading {
+  color: #333;
+}
+
+.paragraph {
+  line-height: 1.5;
+}
+
+.heading {
+  font-weight: 600;
+  font-family: "Raleway", "Lucida Sans", "Lucida Sans Regular", serif;
+}
+
+.btn {
+  text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */

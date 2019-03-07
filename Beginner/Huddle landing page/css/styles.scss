@@ -1,0 +1,31 @@
+$clrPink:hsl(322, 100%, 66%);
+$clrPaleCyan: hsl(193, 100%, 96%);
+$clrDarkCyan: hsl(192, 100%, 9%);
+$clrGreyBlue: hsl(208, 11%, 55%);
+
+$fontMain: 'Open Sans';
+$fontTitles: 'Raleway';
+
+body {
+   font-family: $fontMain, Arial, Helvetica, sans-serif;
+}
+
+.paragraph,
+.btn,
+.heading {
+   color: #333;
+}
+
+.paragraph {
+   line-height: 1.5;
+}
+
+.heading {
+   font-weight: 600;
+   font-family: $fontTitles, 'Lucida Sans', 'Lucida Sans Regular', serif;
+}
+
+.btn {
+   text-decoration: none;
+}
+
