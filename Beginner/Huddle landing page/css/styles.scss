@@ -156,7 +156,7 @@ body {
 .final {
    align-items: center;
    background: #fff;
-   box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.205);
+   box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.123);
    border-radius: .45em;
    display: flex;
    flex-flow: column nowrap;
@@ -177,5 +177,41 @@ body {
       filter: invert(50%);
       margin-top: 2em;
       width: 10em;
+   }
+}
+
+@media (max-width: 50em) {
+   .landing {
+      flex-flow: column nowrap;
+
+      &__divider {
+         &--content {
+            margin: 4em 0 2em 0;
+            order: -1;
+            text-align: center;
+         }
+      }
+
+      &__illustration {
+         min-width: 25em;
+      }
+   }
+
+   .slides {
+      &__slide {
+         flex-flow: column nowrap;
+         justify-content: initial;
+         text-align: center;
+      }
+
+      &__illustration {
+         display: block;
+         order: 1;
+         width: 100%;
+      }
+   }
+
+   .final {
+      transform: translateY(0);
    }
 }
