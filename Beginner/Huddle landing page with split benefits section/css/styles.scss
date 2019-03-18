@@ -1,18 +1,193 @@
-$pink: hsl(322, 100%, 66%);
-$veryDarkCyan: hsl(192, 100%, 9%);
-$grayishBlue: hsl(208, 11%, 55%);
+$clrPink: hsl(322, 100%, 66%);
+$clrVeryDarkCyan: hsl(192, 100%, 9%);
+$clrGrayishBlue: hsl(208, 11%, 55%);
 $fontHeadings: 'Poppins';
 $fontMain: 'Open Sans';
 
+* {
+   box-sizing: border-box;
+
+   &::after,
+   &::before {
+      box-sizing: border-box;
+   }
+}
+
+html,
 body {
-   font-family: $fontMain;
+   height: 100%;
 }
 
-// UTILITY CLASSES
-.u-heading {
-   font-family: $fontHeadings;
+body {
+   font-family: $fontMain, Arial, Helvetica, sans-serif;
 }
 
-.u-heading--bold {
+a {
+   text-decoration: none;
+}
+
+// UTILITY STYLING
+.u-border-pink {
+   background: linear-gradient(to top, $clrPink, lighten($clrPink, 10));
+   border-radius: .125em;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.39);
+   color: #fff;
    font-weight: 600;
+   padding: 1em 2em;
+}
+
+.u-center {
+   max-width: 70em;
+   margin: 0 auto;
+}
+
+.u-content {
+   color: $clrGrayishBlue;
+   line-height: 1.5;
+
+   &--white {
+      color: #fff;
+   }
+}
+
+.u-heading {
+   font-family: $fontHeadings, inherit;
+   font-weight: 600;
+}
+
+.u-heading--blue {
+   color: $clrVeryDarkCyan;
+}
+
+// MAIN STYLING
+.navigation {
+   padding: 1em;
+
+   &__list {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+   }
+
+   &__link {
+      padding: .5em 1em;
+      text-decoration: none;
+
+      &--pink {
+         border: 1px solid $clrPink;
+         border-radius: .125em;
+         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.034);
+         color: $clrPink;
+      }
+   }
+
+   &__logo {
+      display: block;
+      width: 10em;
+   }
+}
+
+.landing {
+   margin: 5em 0 0 0;
+   text-align: center;
+
+   &__content {
+      margin: auto;
+      width: 75%;
+   }
+
+   &__link {
+      display: inline-block;
+      margin: 1.5em 0;
+   }
+
+   &__illustration {
+      display: block;
+      margin: 4em auto;
+      width: 70%;
+   }
+}
+
+.features {
+   display: flex;
+   margin: 7.5em 0;
+
+   &__divider {
+      flex-basis: 50%;
+   }
+
+   &__feature {
+      padding: 0 1em;
+   }
+
+   &__illustration {
+      display: block;
+      width: 100%;
+   }
+}
+
+.start {
+   padding: 4em 0 6em 0;
+   text-align: center;
+
+   &__heading {
+      font-size: 2.5rem;
+      margin: 0 0 1.25em 0;
+   }
+}
+
+.footer {
+   background: $clrVeryDarkCyan;
+   padding: 6em 3em;
+   position: relative;
+
+   &__logo {
+      display: block;
+      filter: invert(100%);
+      width: 10em;
+   }
+
+   &__row {
+      align-items: baseline;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__item {
+      flex-basis: 25%;
+      margin: 1em 0;
+   }
+
+   &__list {
+      list-style-type: none;
+   }
+
+   &__link {
+      color: #fff;
+   }
+
+   &__form {
+      display: flex;
+   }
+
+   &__input,
+   &__input-submit {
+      border: 0;
+      padding: .5em;
+   }
+
+   &__input-submit {
+      background: $clrPink;
+      cursor: pointer;
+      color: #fff;
+   }
+
+   &__bg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+   }
 }
