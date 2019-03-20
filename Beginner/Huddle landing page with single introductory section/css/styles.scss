@@ -1,0 +1,11 @@
+$clrPrimary:hsl(257, 40%, 49%);
+$fontHeading: 'Poppins';
+$fontMain: 'Open sans';
+
+body {
+   font-family: $fontMain, Arial, Helvetica, sans-serif;
+}
+
+.u-heading {
+   font-family: $fontHeading, inherit;
+}
