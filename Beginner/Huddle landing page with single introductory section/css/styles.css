@@ -167,4 +167,12 @@ body {
 .social__link:hover {
   background: rgba(255, 255, 255, 0.11);
 }
+
+@media (max-width: 50em) {
+  .social__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

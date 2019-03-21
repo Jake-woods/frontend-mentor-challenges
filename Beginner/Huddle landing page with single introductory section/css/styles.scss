@@ -159,4 +159,10 @@ body {
          background: rgba(255, 255, 255, 0.11);
       }
    }
+
+   @media (max-width: $mediaBreakPointMobile) {
+      &__items {
+         justify-content: center;
+      }
+   }
 }
