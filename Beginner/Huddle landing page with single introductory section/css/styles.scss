@@ -1,11 +1,151 @@
-$clrPrimary:hsl(257, 40%, 49%);
+// SCSS STUFF
+$clrPrimary: #674BAF;
 $fontHeading: 'Poppins';
 $fontMain: 'Open sans';
 
+@mixin circle($i) {
+   border-radius: 50%;
+   display: block;
+   height: $i;
+   line-height: $i;
+   width: $i;
+}
+
+
+html,
 body {
+   height: 100%;
+}
+
+body {
+   background: $clrPrimary;
    font-family: $fontMain, Arial, Helvetica, sans-serif;
 }
 
+// Utility
+.u-center {
+   max-width: 75em;
+   margin: 0 auto;
+}
+
 .u-heading {
-   font-family: $fontHeading, inherit;
+   font-family: $fontHeading, Arial, Helvetica, sans-serif;
+   font-weight: 700;
+   line-height: 1.5;
+}
+
+.u-paragraph {
+   line-height: 1.5;
+}
+
+.u-list {
+   list-style-type: none;
+}
+
+.u-link {
+   text-decoration: none;
+}
+
+// Main stylings
+.desktop-bg,
+.mobile-bg {
+   display: block;
+   height: 100%;
+   left: 0;
+   min-height: 50em;
+   position: fixed;
+   top: 0;
+   user-select: none;
+   width: 100%;
+   z-index: -1;
+}
+
+.desktop-bg {
+   @media (max-width: 50em) {
+      display: none;
+   }
+}
+
+.mobile-bg {
+   display: none;
+
+   @media (max-width: 50em) {
+      display: block;
+   }
+}
+
+.navbar {
+   padding: 1em 0;
+
+   &__items {
+      list-style-type: none;
+      padding: 0;
+   }
+
+   &__logo {
+      display: block;
+      width: 12.25em;
+   }
+}
+
+.landing {
+   display: flex;
+   margin: 4em 0;
+
+   &__section {
+      flex-basis: 50%;
+
+      &--right {
+         padding: 2em;
+      }
+   }
+
+   &__title,
+   &__content {
+      color: #fff;
+   }
+
+   &__title {
+      font-weight: 700;
+      font-size: 2rem;
+   }
+
+   &__link {
+      background: #fff;
+      border-radius: 5em;
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.219);
+      color: $clrPrimary;
+      display: inline-block;
+      font-size: 1.105rem;
+      padding: 1em 5em;
+   }
+
+   &__illustration {
+      display: block;
+      width: 100%;
+   }
+}
+
+.social {
+   &__items {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1em;
+   }
+
+   &__item {
+      margin: 0 .75em;
+   }
+
+   &__link {
+      border: 1px solid #fff;
+      color: #fff;
+      text-align: center;
+      transition: background 300ms ease;
+      @include circle(2em);
+
+      &:hover {
+         background: rgba(255, 255, 255, 0.11);
+      }
+   }
 }

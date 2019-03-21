@@ -1,8 +1,151 @@
+html,
 body {
+  height: 100%;
+}
+
+body {
+  background: #674BAF;
   font-family: "Open sans", Arial, Helvetica, sans-serif;
 }
 
+.u-center {
+  max-width: 75em;
+  margin: 0 auto;
+}
+
 .u-heading {
-  font-family: "Poppins", inherit;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.u-paragraph {
+  line-height: 1.5;
+}
+
+.u-list {
+  list-style-type: none;
+}
+
+.u-link {
+  text-decoration: none;
+}
+
+.desktop-bg,
+.mobile-bg {
+  display: block;
+  height: 100%;
+  left: 0;
+  min-height: 50em;
+  position: fixed;
+  top: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (max-width: 50em) {
+  .desktop-bg {
+    display: none;
+  }
+}
+
+.mobile-bg {
+  display: none;
+}
+
+@media (max-width: 50em) {
+  .mobile-bg {
+    display: block;
+  }
+}
+
+.navbar {
+  padding: 1em 0;
+}
+
+.navbar__items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar__logo {
+  display: block;
+  width: 12.25em;
+}
+
+.landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4em 0;
+}
+
+.landing__section {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.landing__section--right {
+  padding: 2em;
+}
+
+.landing__title, .landing__content {
+  color: #fff;
+}
+
+.landing__title {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.landing__link {
+  background: #fff;
+  border-radius: 5em;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.219);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.219);
+  color: #674BAF;
+  display: inline-block;
+  font-size: 1.105rem;
+  padding: 1em 5em;
+}
+
+.landing__illustration {
+  display: block;
+  width: 100%;
+}
+
+.social__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+}
+
+.social__item {
+  margin: 0 .75em;
+}
+
+.social__link {
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: background 300ms ease;
+  transition: background 300ms ease;
+  border-radius: 50%;
+  display: block;
+  height: 2em;
+  line-height: 2em;
+  width: 2em;
+}
+
+.social__link:hover {
+  background: rgba(255, 255, 255, 0.11);
 }
 /*# sourceMappingURL=styles.css.map */
