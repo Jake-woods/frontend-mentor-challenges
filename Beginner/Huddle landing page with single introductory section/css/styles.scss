@@ -2,6 +2,7 @@
 $clrPrimary: #674BAF;
 $fontHeading: 'Poppins';
 $fontMain: 'Open sans';
+$mediaBreakPointMobile: 50em;
 
 @mixin circle($i) {
    border-radius: 50%;
@@ -26,6 +27,10 @@ body {
 .u-center {
    max-width: 75em;
    margin: 0 auto;
+
+   @media (max-width: $mediaBreakPointMobile) {
+      max-width: 40em;
+   }
 }
 
 .u-heading {
@@ -89,6 +94,7 @@ body {
 }
 
 .landing {
+   align-items: center;
    display: flex;
    margin: 4em 0;
 
@@ -123,6 +129,11 @@ body {
    &__illustration {
       display: block;
       width: 100%;
+   }
+
+   @media (max-width: $mediaBreakPointMobile) {
+      flex-flow: column;
+      text-align: center;
    }
 }
 
