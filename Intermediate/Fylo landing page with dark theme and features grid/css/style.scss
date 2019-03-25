@@ -2,23 +2,41 @@
 $clrDarkBlue2: hsl(218, 28%, 13%);
 $clrDarkBlue3: hsl(216, 53%, 9%);
 $clrDarkBlue4: hsl(219, 30%, 18%);
-$clrCyan: hsl(176, 68%, 64%);
+$clrCyan: hsl(176, 68%, 55%);
 $clrBlue: hsl(198, 60%, 50%);
 // Fonts
 $fontHeading: 'Raleway';
 $fontMain: 'Open sans';
 
-body {
-   font-family: $fontMain, Arial, Helvetica, sans-serif;
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
 }
+
+
+body {
+   background: $clrDarkBlue2;
+   font-family: $fontMain, Arial, Helvetica, sans-serif;
+   position: relative;
+}
+
 
 // Utility styles
 .u-heading {
    font-family: $fontHeading, sans-serif;
+
+   &--white {
+      color: rgb(255, 255, 255);
+   }
 }
 
 .u-paragraph {
    line-height: 1.5;
+
+   &--white {
+      color: #fff;
+   }
 }
 
 .u-link {
@@ -30,4 +48,89 @@ body {
    padding: 0;
 }
 
+.u-wrapper {
+   max-width: 70em;
+   margin: 0 auto;
+}
+
+.u-logo {
+   display: block;
+   width: 8.5em;
+}
+
+.u-padding {
+   padding: 6em 0;
+}
+
+.u-featured-btn {
+   border-radius: 4em;
+   display: inline-block;
+   font-weight: bold;
+   margin: auto;
+   padding: 1em 4em;
+
+   &--blue {
+      background: $clrBlue;
+      color: #fff;
+   }
+}
+
 // Main styles
+.navbar {
+   &__list {
+      align-items: center;
+      display: flex;
+      justify-content: flex-end;
+      padding: .5em 0;
+   }
+
+   &__item {
+      margin: 0 .75em;
+
+      &--align-left {
+         margin: 0;
+         margin-right: auto;
+      }
+   }
+
+   &__link {
+      color: #fff;
+   }
+}
+
+.landing {
+   text-align: center;
+
+   &__illustration {
+      display: block;
+      margin: 0 auto;
+      width: 50%;
+   }
+
+   &__inner {
+      margin: auto;
+      width: 60%;
+   }
+
+   &__heading {
+      font-size: 2.25rem;
+   }
+
+   &__content {
+      padding: 0 5.5em;
+   }
+}
+
+.features {
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1em;
+   }
+
+   &__feature {
+      padding: 3em 4em;
+      text-align: center;
+   }
+}
