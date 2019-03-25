@@ -1,0 +1,33 @@
+// Colours
+$clrDarkBlue2: hsl(218, 28%, 13%);
+$clrDarkBlue3: hsl(216, 53%, 9%);
+$clrDarkBlue4: hsl(219, 30%, 18%);
+$clrCyan: hsl(176, 68%, 64%);
+$clrBlue: hsl(198, 60%, 50%);
+// Fonts
+$fontHeading: 'Raleway';
+$fontMain: 'Open sans';
+
+body {
+   font-family: $fontMain, Arial, Helvetica, sans-serif;
+}
+
+// Utility styles
+.u-heading {
+   font-family: $fontHeading, sans-serif;
+}
+
+.u-paragraph {
+   line-height: 1.5;
+}
+
+.u-link {
+   text-decoration: none;
+}
+
+.u-list {
+   list-style-type: none;
+   padding: 0;
+}
+
+// Main styles

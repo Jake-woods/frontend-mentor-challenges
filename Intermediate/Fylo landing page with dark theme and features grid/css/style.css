@@ -1,0 +1,21 @@
+body {
+  font-family: "Open sans", Arial, Helvetica, sans-serif;
+}
+
+.u-heading {
+  font-family: "Raleway", sans-serif;
+}
+
+.u-paragraph {
+  line-height: 1.5;
+}
+
+.u-link {
+  text-decoration: none;
+}
+
+.u-list {
+  list-style-type: none;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */
