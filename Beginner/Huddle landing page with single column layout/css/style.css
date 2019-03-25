@@ -27,7 +27,7 @@ body {
 }
 
 .nav {
-  padding: 1em 0;
+  padding: 1em .5em;
 }
 
 .nav__list {
@@ -164,9 +164,37 @@ body {
 
 .footer__link {
   color: #fff;
+  white-space: nowrap;
 }
 
 .footer__link--icon {
   font-size: 1.75rem;
+}
+
+@media (max-width: 50em) {
+  .landing {
+    max-width: 100%;
+  }
+  .sign-up__form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 85%;
+  }
+  .sign-up__input--value {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .footer__item {
+    margin: .5em 0 !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
