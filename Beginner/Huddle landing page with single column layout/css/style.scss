@@ -1,4 +1,162 @@
 $clrPink: hsl(322, 100%, 66%);
 $clrVeryDarkCyan: hsl(192, 100%, 9%);
 $clrGrayishBlue: hsl(208, 11%, 55%);
+$fontMain: 'Open sans';
+$fontHeading: 'Poppins';
 
+
+body {
+   background: #fff;
+   font-family: $fontMain, Arial, Helvetica, sans-serif;
+}
+
+// Utility styles
+.u-center {
+   max-width: 75em;
+   margin: 0 auto;
+}
+
+.u-link {
+   text-decoration: none;
+}
+
+.u-list {
+   list-style-type: none;
+}
+
+.u-heading {
+   color: $clrVeryDarkCyan;
+   font-family: $fontHeading, Arial, Helvetica, sans-serif;
+}
+
+.u-paragraph {
+   color: $clrGrayishBlue;
+   line-height: 1.5;
+}
+
+// Main styles
+.nav {
+   padding: 1em 0;
+
+   &__list {
+      display: flex;
+      padding: 0;
+   }
+
+   &__logo {
+      display: block;
+      width: 12.5em;
+   }
+}
+
+.landing {
+   max-width: 75%;
+   margin: 10em auto;
+   text-align: center;
+
+   &__title {
+      font-size: 2.5rem;
+   }
+
+   &__text {
+      font-size: 1.25rem;
+      margin: 1em auto;
+      width: 75%;
+   }
+
+   &__illustration {
+      display: block;
+      margin: auto;
+      width: 75%;
+   }
+}
+
+.sign-up {
+   margin-bottom: 7.5em;
+   text-align: center;
+
+   &__title {
+      font-size: 2.5rem;
+   }
+
+   &__form {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: .5em;
+      margin: auto;
+      padding: 1em;
+      width: 60%;
+   }
+
+   &__input {
+      border: 0;
+      border-radius: .5em;
+      padding: 1.25em 1.5em;
+      font-family: inherit;
+
+      &--value {
+         box-shadow: 1px 1px 10px lighten($clrGrayishBlue, 15);
+         color: #555;
+         grid-column: 1 / 4;
+      }
+
+      &--submit {
+         background: linear-gradient(to top, #fe68c2, #ff8abd);
+         cursor: pointer;
+         color: #fff;
+         opacity: 0.9;
+         transition: opacity 300ms ease;
+
+         &:hover {
+            opacity: 1;
+         }
+      }
+   }
+}
+
+.footer {
+   background: $clrVeryDarkCyan;
+   padding: 4em;
+
+   &__logo {
+      display: block;
+      filter: invert(100%);
+      margin-right: auto;
+      width: 10em;
+   }
+
+   &__list {
+      align-items: center;
+      display: flex;
+      justify-content: flex-end;
+      padding: 1em 0;
+      &--left {
+         justify-content: flex-start;
+      }
+   }
+
+   &__item {
+      color: #fff;
+
+      &:not(:first-child) {
+         margin: 0 .75em;
+      }
+
+
+      &--left {
+         margin-right: auto !important;
+      }
+
+      &--right {
+         margin-left: auto !important;
+      }
+   }
+
+   &__link {
+      color: #fff;
+
+      &--icon {
+         font-size: 1.75rem;
+      }
+   }
+}
