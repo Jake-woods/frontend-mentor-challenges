@@ -124,4 +124,121 @@ body {
   padding: 3em 4em;
   text-align: center;
 }
+
+.stay-productive {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stay-productive__illustration {
+  display: block;
+  width: 100%;
+}
+
+.stay-productive__inner {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.stay-productive__inner--extra-padding {
+  padding: 1em;
+}
+
+.stay-productive__title {
+  font-size: 2rem;
+}
+
+.stay-productive__link {
+  border-bottom: 1px solid #3edad0;
+  color: #3edad0;
+  padding: .5em 0;
+}
+
+.testimonials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  position: relative;
+}
+
+.testimonials__quotation {
+  display: block;
+  left: -1em;
+  position: absolute;
+  top: 3.35em;
+  width: 3.5em;
+  z-index: -1;
+}
+
+.testimonials__user {
+  color: #fff;
+  display: block;
+  margin: .5em 0;
+}
+
+.testimonials__inner {
+  background: #21293c;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  padding: 1em;
+}
+
+.cta {
+  background: #21293c;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.466);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.466);
+  border-radius: .5em;
+  margin: 4em auto;
+  padding: 3em 4em;
+  text-align: center;
+  width: 75%;
+}
+
+.cta__title {
+  font-size: 2rem;
+}
+
+.cta__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cta__input {
+  border-radius: 5em;
+  border: 0;
+  padding: .85em;
+}
+
+.cta__input--email {
+  background: #fff;
+  color: #888;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  margin-right: 2em;
+}
+
+.cta__input--submit {
+  background: #339ecc;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer {
+  background: #0b1523;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4em;
+}
 /*# sourceMappingURL=style.css.map */
